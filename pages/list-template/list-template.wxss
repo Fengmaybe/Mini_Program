@@ -1,0 +1,48 @@
+/*注意template标签只有name，不要设class属性，没有用*/
+.singleTmp{
+  display: flex;
+  flex-direction: column;
+  padding: 0 20rpx;
+  margin-top: 40rpx;
+}
+.header{
+  margin-bottom: 16rpx;
+}
+.header image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;
+}
+.header text{
+  font-size: 32rpx;
+}
+.title{
+  padding-bottom: 10rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.bigImg{
+  width: 100%;
+  height: 440rpx;
+}
+.content{
+  padding-top: 10rpx;
+  font-size: 32rpx;
+  text-indent: 32rpx;
+}
+.loveAndView{
+  padding: 20rpx 0 16rpx;
+  border-bottom: 3rpx solid gray;
+}
+.loveAndView image{
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-right: 12rpx;
+}
+.loveAndView text{
+  font-size: 28rpx;
+  margin-right: 12rpx;
+}

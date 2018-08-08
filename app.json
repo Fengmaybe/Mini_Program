@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/index/index"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#000",
+    "navigationBarBackgroundColor": "#A3E4D7",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "Fengmaybe"
+    "navigationBarTitleText": "网易云音乐"
   }
 }
