@@ -1,9 +1,10 @@
 <!--pages/index/index.wxml-->
 
 <view class='IndexContainer'>
-  <image src='/images/avatar/2.png' class='avatar'></image>
-  <text class='userName'>Fengmaybe {{userName}}</text>
-  <view class='goStart'>
+  <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+  <text class='userName'>Hello  {{userInfo.nickName}}</text>
+   <button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo" style='display:{{isShow ? "block" : "none"}}'>微信授权</button> 
+  <view class='goStart' catchtap='goStart'>
     <text class='goFont'>开启小程序之旅</text>
   </view>
 </view>

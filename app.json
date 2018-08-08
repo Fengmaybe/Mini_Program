@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/list/list"
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#000",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "Fengmaybe"
