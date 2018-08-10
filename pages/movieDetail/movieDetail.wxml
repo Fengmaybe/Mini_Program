@@ -1,0 +1,16 @@
+<!--pages/movieDetail/movieDetail.wxml-->
+<view class='movieDetailContainer'>
+<image src='{{movieItem.images.large}}' class='mobieImg'></image>
+<text class='movie_title'>{{movieItem.original_title}}</text>
+  <view class='movie_info'>
+    <text class='movie_rating'>评分：{{movieItem.rating.average}} </text>
+    <text class='movie_year'>年份：{{movieItem.year}}</text>
+    <text class='movie_country'>国家：{{movieItem.countries[0]}} </text>
+    <text class='movie_classify'>分类：{{movieItem.genres}} </text>
+    <text class='movie_direction'>导演：{{movieItem.directors[0].name}} </text>
+     <text class='movie_casts'>主演：
+    <text wx:for='{{movieItem.casts}}' wx:key='{{index}}'>{{item.name}}  </text>
+    </text> 
+  </view>
+  <button>我要观影</button>
+</view>

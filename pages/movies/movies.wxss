@@ -1,0 +1,45 @@
+/* pages/movies/movies.wxss */
+.moviesContainer {
+	display: flex;
+	padding: 20rpx;
+	border-bottom: 1rpx solid #eee;
+}
+
+.movieImg {
+	width: 128rpx;
+	height: 128rpx;
+}
+
+.movie_detail {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin-left: 20rpx;
+}
+
+.movie_name {
+	width: 90%;
+	font-size: 32rpx;
+	color: #000;
+	white-space: nowrap; /*文本不换行*/
+	overflow: hidden; /*文本超过则overflow*/
+	text-overflow: ellipsis; /*省略号*/
+}
+
+.movie_year {
+	font-size: 30rpx;
+	color: #666;
+	margin: 8rpx 0ex; 
+}
+
+.movie_director {
+	font-size: 30rpx;
+	color: #666;
+}
+
+.movie_rating {
+	font-size: 44rpx;
+	color: red;
+	font-weight: 700;
+  font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

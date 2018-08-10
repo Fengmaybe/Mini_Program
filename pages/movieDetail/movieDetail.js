@@ -1,41 +1,26 @@
-// pages/list/list.js
-//用相对路径
-let Datas = require('../../datas/list-data.js');
+// pages/movieDetail/movieDetail.js
+
+let movieApp = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  listDatas:[],
+    movieItem:{},
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  this.setData({
-    listDatas: Datas.list_data,
-  })
-  },
-  //点击每个item的事件
-  goDetail (event) {
-
-  let index = event.currentTarget.dataset.index;
-  wx.navigateTo({
-    url: '/pages/detail/detail?index='+ index,
-    success: () => {
-
-    }
-  })
-  },
-
-  //轮播图点击-事件委托
-  swiperGoDetail (event){
-    let index = event.target.dataset.index;
-    wx.navigateTo({
-      url: '/pages/detail/detail?index=' + index,
-    })
+    //用户点选的哪个index电影
+  
+    let index = options.index;
+  
+    this.setData({
+      movieItem: movieApp.data.movieArr[index],
+    });
   },
 
   /**

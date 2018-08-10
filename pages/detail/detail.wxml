@@ -1,0 +1,23 @@
+<!--pages/detail/detail.wxml-->
+<view class='detailContainer'>
+  <image src='{{detailDataObj.detail_img}}' class='headerImg'></image>
+  <image catchtap='handleMusicPlay' class='musicImg' src='{{isMusicPlay? "/images/music/music-start.png":"/images/music/music-stop.png"}}'></image>
+  <view class='userInfo'>
+    <image src='{{detailDataObj.avatar}}' class='avatar'></image>
+    <text>{{detailDataObj.author}}</text>
+    <text>发布于</text>
+    <text>{{detailDataObj.date}}</text>
+  </view>
+  <text class='title'>{{detailDataObj.title}}</text>
+  <view class='collection-share-container'>
+  <view class='collection-share'>
+    <image catchtap='handleCollected'  wx:if="{{isCollected}}"   src='/images/icon/collection.png'></image>
+    <image catchtap='handleCollected'  wx:if="{{!isCollected}}" src='/images/icon/collection-anti.png'></image>
+    <image catchtap='handleShare' src='/images/icon/share.png'></image>
+  </view>
+  <view class='line'></view>
+  </view>
+  <text class='content'>{{detailDataObj.detail_content}}</text>
+  <button open-type='share'>Share More</button>
+
+</view>

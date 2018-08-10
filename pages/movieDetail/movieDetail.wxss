@@ -1,0 +1,36 @@
+/* pages/movieDetail/movieDetail.wxss */
+.movieDetailContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+
+}
+.mobieImg{
+  width: 70%;
+  height: 700rpx;
+}
+.movie_title{
+  font-size: 46rpx;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+.movie_info{
+  display: flex;
+  flex-direction: column;
+  
+  align-content: flex-start;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}
+button{
+  width: 70%;
+	height: 80rpx;
+	background-color: #A3E4D7;
+	color: #fff;
+	line-height: 80rpx;
+	margin-top: 30rpx;
+   font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+   font-weight: bold;
+}

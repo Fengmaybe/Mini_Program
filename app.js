@@ -1,4 +1,10 @@
 App({  //注册小程序
+data: {
+  isPlay: false,//检测全局页面中的音乐是否播放
+  pageIndex:null,
+  movieArr:[],
+  
+},
 
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）

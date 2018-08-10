@@ -1,11 +1,35 @@
 {
   "pages": [
+    
     "pages/list/list",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/movies/movies",
+    "pages/movieDetail/movieDetail"
+   
   ],
   "window": {
     "navigationBarBackgroundColor": "#A3E4D7",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "网易云音乐"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "文艺",
+        "iconPath": "/images/tab/yuedu.png",
+        "selectedIconPath": "/images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "/images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying_hl.png"
+      }
+    ],
+    "backgroundColor": "#A3E4D7",
+    "color": "#859995",
+    "selectedColor": "#1F4BA5"
   }
 }
