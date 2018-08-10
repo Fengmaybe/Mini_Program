@@ -4,6 +4,7 @@
   <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
   <text class='userName'>Hello  {{userInfo.nickName}}</text>
    <button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo" style='display:{{isShow ? "block" : "none"}}'>微信授权</button> 
+   <navigator url='pages/list/list'></navigator>
   <view class='goStart' catchtap='goStart'>
     <text class='goFont'>开启小程序之旅</text>
   </view>

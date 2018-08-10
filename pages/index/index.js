@@ -11,9 +11,9 @@ Page({
   },
   //对象的简写
   goStart () {
-    console.log('我点击了开启小程序之旅');
+  
     // 点击跳转到list页面 保留当前页面，跳转到应用内的某个页面
-    wx.navigateTo({
+    wx.switchTab({
       //注意从根目录下查找
       url: '/pages/list/list'
     })
